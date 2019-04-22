@@ -1,12 +1,11 @@
 package br.ufjf.dcc193.Projeto1DCC193.Modelo;
 
-import java.util.Calendar;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
+
 
 
 @Entity
@@ -20,11 +19,9 @@ private String tituloDescritivo;
 
 private String descricaoTextual; 
 
-@Temporal(TemporalType.DATE)
-private Calendar dataInicio;
+private Date dataInicio;
 
-@Temporal(TemporalType.DATE)
-private Calendar dataFim;
+private Date dataFim;
 
 private double horaJuridica;
 
@@ -34,19 +31,19 @@ private double horaFinanceira;
 
 private double horaExecutiva;
 
-private Sede sede;
+// private Sede sede;
 
 public Atividades(){}
 
 /**
  * @return the dataFim
  */
-public Calendar getDataFim() {
+public Date getDataFim() {
     return dataFim;
 }/**
  * @return the dataInicio
  */
-public Calendar getDataInicio() {
+public Date getDataInicio() {
     return dataInicio;
 }/**
  * @return the descricaoTextual
@@ -81,9 +78,10 @@ public Long getId() {
 }/**
  * @return the sede
  */
-public Sede getSede() {
-    return sede;
-}/**
+// public Sede getSede() {
+//     return sede;
+// }
+/**
  * @return the tituloDescritivo
  */
 public String getTituloDescritivo() {
@@ -93,12 +91,12 @@ public String getTituloDescritivo() {
 /**
  * @param dataFim the dataFim to set
  */
-public void setDataFim(Calendar dataFim) {
+public void setDataFim(Date dataFim) {
     this.dataFim = dataFim;
 }/**
  * @param dataInicio the dataInicio to set
  */
-public void setDataInicio(Calendar dataInicio) {
+public void setDataInicio(Date dataInicio) {
     this.dataInicio = dataInicio;
 }/**
  * @param descricaoTextual the descricaoTextual to set
@@ -133,8 +131,8 @@ public void setId(Long id) {
 }/**
  * @param sede the sede to set
  */
-public void setSede(Sede sede) {
-    this.sede = sede;
-}
+// public void setSede(Sede sede) {
+//     this.sede = sede;
+// }
 
 }

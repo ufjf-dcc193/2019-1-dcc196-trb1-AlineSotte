@@ -1,10 +1,12 @@
 package br.ufjf.dcc193.Projeto1DCC193.Modelo;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import org.springframework.data.annotation.Id;
 // import java.util.List;
+import javax.persistence.Id;
 
 @Entity
 public class Sede {
@@ -17,7 +19,7 @@ private String nomeFantasia;
 
 private String estadoFederacao; 
 
-private String dataEntrada;
+private Date dataEntrada;
 
 private String bairro;
 
@@ -41,7 +43,7 @@ public String getBairro() {
 /**
  * @return the dataEntrada
  */
-public String getDataEntrada() {
+public Date getDataEntrada() {
     return dataEntrada;
 }
 
@@ -82,7 +84,7 @@ public void setBairro(String bairro) {
 /**
  * @param dataEntrada the dataEntrada to set
  */
-public void setDataEntrada(String dataEntrada) {
+public void setDataEntrada(Date dataEntrada) {
     this.dataEntrada = dataEntrada;
 } 
 

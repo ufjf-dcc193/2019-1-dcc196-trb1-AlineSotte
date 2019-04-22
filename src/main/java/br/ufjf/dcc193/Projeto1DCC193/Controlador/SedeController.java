@@ -1,6 +1,5 @@
 package br.ufjf.dcc193.Projeto1DCC193.Controlador;
 
-import java.util.List;
 import br.ufjf.dcc193.Projeto1DCC193.Repositorio.SedeRepository;
 import br.ufjf.dcc193.Projeto1DCC193.Modelo.Sede;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +22,7 @@ mv.setViewName("sede");
 mv.addObject("sede",s);
 return mv;
 }
+
 
 
 }

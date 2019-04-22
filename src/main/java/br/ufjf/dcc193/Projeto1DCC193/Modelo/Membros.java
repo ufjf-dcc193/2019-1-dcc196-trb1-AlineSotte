@@ -1,13 +1,11 @@
 package br.ufjf.dcc193.Projeto1DCC193.Modelo;
 
-import java.util.Calendar;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.Id;
 import javax.validation.constraints.Email;
-import org.springframework.data.annotation.Id;
 
 
 @Entity
@@ -17,28 +15,28 @@ public class Membros {
 @GeneratedValue(strategy = GenerationType.SEQUENCE)
 private Long id;  
 
+private String nome;
+
 private String funcao;
 
 @Email
 private String email; 
 
-@Temporal(TemporalType.DATE)
-private Calendar dataEntrada;
+private Date dataEntrada;
 
-@Temporal(TemporalType.DATE)
-private Calendar dataSaida;
+private Date dataSaida;
 
-private Sede sede;
+// private Sede sede;
 
 /**
  * @return the dataEntrada
  */
-public Calendar getDataEntrada() {
+public Date getDataEntrada() {
     return dataEntrada;
 }/**
  * @return the dataSaida
  */
-public Calendar getDataSaida() {
+public Date getDataSaida() {
     return dataSaida;
 }/**
  * @return the email
@@ -58,18 +56,18 @@ public Long getId() {
 }/**
  * @return the sede
  */
-public Sede getSede() {
-    return sede;
-}
+// public Sede getSede() {
+//     return sede;
+// }
 /**
  * @param dataEntrada the dataEntrada to set
  */
-public void setDataEntrada(Calendar dataEntrada) {
+public void setDataEntrada(Date dataEntrada) {
     this.dataEntrada = dataEntrada;
 }/**
  * @param dataSaida the dataSaida to set
  */
-public void setDataSaida(Calendar dataSaida) {
+public void setDataSaida(Date dataSaida) {
     this.dataSaida = dataSaida;
 }/**
  * @param email the email to set
@@ -89,8 +87,22 @@ public void setId(Long id) {
 }/**
  * @param sede the sede to set
  */
-public void setSede(Sede sede) {
-    this.sede = sede;
+// public void setSede(Sede sede) {
+//     this.sede = sede;
+// }
+
+/**
+ * @return the nome
+ */
+public String getNome() {
+    return nome;
+}
+
+/**
+ * @param nome the nome to set
+ */
+public void setNome(String nome) {
+    this.nome = nome;
 }
 
 }

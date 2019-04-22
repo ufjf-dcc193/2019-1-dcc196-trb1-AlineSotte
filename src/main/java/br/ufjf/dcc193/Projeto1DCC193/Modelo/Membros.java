@@ -5,7 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.Email;
+
 
 
 @Entity
@@ -26,7 +28,8 @@ private Date dataEntrada;
 
 private Date dataSaida;
 
-// private Sede sede;
+@ManyToOne
+private Sede sede;
 
 /**
  * @return the dataEntrada
@@ -56,9 +59,9 @@ public Long getId() {
 }/**
  * @return the sede
  */
-// public Sede getSede() {
-//     return sede;
-// }
+public Sede getSede() {
+    return sede;
+}
 /**
  * @param dataEntrada the dataEntrada to set
  */
@@ -87,9 +90,9 @@ public void setId(Long id) {
 }/**
  * @param sede the sede to set
  */
-// public void setSede(Sede sede) {
-//     this.sede = sede;
-// }
+public void setSede(Sede sede) {
+    this.sede = sede;
+}
 
 /**
  * @return the nome

@@ -5,7 +5,6 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-// import java.util.List;
 import javax.persistence.Id;
 
 @Entity
@@ -26,10 +25,6 @@ private String bairro;
 private String telefone;
 
 private String endereco;
-
-// private List<Membros> membros;
-
-// private List<Atividades> atividades;
 
 public Sede(){}
 

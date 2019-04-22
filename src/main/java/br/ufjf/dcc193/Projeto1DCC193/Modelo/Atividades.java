@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 
@@ -31,7 +32,8 @@ private double horaFinanceira;
 
 private double horaExecutiva;
 
-// private Sede sede;
+@ManyToOne
+private Sede sede;
 
 public Atividades(){}
 
@@ -78,9 +80,9 @@ public Long getId() {
 }/**
  * @return the sede
  */
-// public Sede getSede() {
-//     return sede;
-// }
+public Sede getSede() {
+    return sede;
+}
 /**
  * @return the tituloDescritivo
  */
@@ -131,8 +133,8 @@ public void setId(Long id) {
 }/**
  * @param sede the sede to set
  */
-// public void setSede(Sede sede) {
-//     this.sede = sede;
-// }
+public void setSede(Sede sede) {
+    this.sede = sede;
+}
 
 }

@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Sede {
 
 @Id
-@GeneratedValue(strategy = GenerationType.SEQUENCE)
+@GeneratedValue(strategy = GenerationType.TABLE)
 private Long id;
 
 private String nomeFantasia;
@@ -112,5 +112,13 @@ public void setTelefone(String telefone) {
     this.telefone = telefone;
 }
 
+public Sede (String nome, String estado){
+this.nomeFantasia=nome; 
+this.estadoFederacao=estado;}
 
+@Override
+public String toString() {
+    return "Sede:"+" "+this.nomeFantasia+"//"+this.estadoFederacao;
+}
+ 
 }

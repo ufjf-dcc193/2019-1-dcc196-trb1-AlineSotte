@@ -13,7 +13,7 @@ import javax.persistence.ManyToOne;
 public class Atividades {
 
 @Id
-@GeneratedValue(strategy = GenerationType.SEQUENCE)
+@GeneratedValue(strategy = GenerationType.TABLE)
 private Long id;  
 
 private String tituloDescritivo;

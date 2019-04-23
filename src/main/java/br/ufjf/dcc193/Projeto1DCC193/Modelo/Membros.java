@@ -14,7 +14,7 @@ import javax.validation.constraints.Email;
 public class Membros {
 
 @Id
-@GeneratedValue(strategy = GenerationType.SEQUENCE)
+@GeneratedValue(strategy = GenerationType.TABLE)
 private Long id;  
 
 private String nome;

@@ -2,10 +2,15 @@ package br.ufjf.dcc193.Projeto1DCC193.Controlador;
 
 import br.ufjf.dcc193.Projeto1DCC193.Repositorio.SedeRepository;
 import br.ufjf.dcc193.Projeto1DCC193.Modelo.Sede;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+
 
 
 
@@ -15,11 +20,34 @@ import org.springframework.web.servlet.ModelAndView;
 @Autowired
 private SedeRepository repsede;   
 
-@RequestMapping("sede.html")
-ModelAndView sede(Sede s){
+@RequestMapping("index.html")
+ModelAndView home(Sede home){
 ModelAndView mv = new ModelAndView();
-mv.setViewName("sede");
-mv.addObject("sede",s);
+mv.setViewName("index");
+mv.addObject("home",home);
+return mv;
+}
+
+@RequestMapping("adicionasede.html")
+    String form(){
+        return "formulariosede";
+    }
+
+@RequestMapping("cadastrarsede.html")
+    ModelAndView novo(Sede s){
+        ModelAndView mv= new ModelAndView();
+        mv.setViewName("cadastrosede");
+        repsede.save(s);
+        mv.addObject("addsede", s);
+        return mv;
+    }
+
+@RequestMapping("listasede.html")
+ModelAndView listaSedes(){
+ModelAndView mv=new ModelAndView();
+mv.setViewName("listasede");
+List<Sede> sd = repsede.findAll();
+mv.addObject("listased",sd);
 return mv;
 }
 

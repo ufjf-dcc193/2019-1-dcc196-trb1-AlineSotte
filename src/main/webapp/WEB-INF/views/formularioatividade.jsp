@@ -19,98 +19,58 @@
             <table cellspacing="10">
                 <tr>
                     <td>
-                        <label for="nome">Nome Completo: </label>
+                        <label for="nome">Título </label>
                     </td>
                     <td align="left">
-                        <input type="text" name="email">
+                        <input type="text" name="Título">
                     </td>
 
                 </tr>
                 <tr>
-                        <td>
-                            <label for="nome">Site: </label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="email">
-                        </td>
-    
-                    </tr>
-                <tr></tr>
-                </tr>
+                    <td>
+                        <label for="nome">Descrição </label>
+                    </td>
+                    <td>
+                        <tex align="left">
+                            <textarea name="Descrição" rows="10" cols="40"></textarea>
+                    </td>
+
                 </tr>
             </table>
         </fieldset>
 
         <br />
-        <!-- ENDEREÇO -->
-        <fieldset>
-            <legend>Dados de Endereço</legend>
-            <table cellspacing="10">
 
+        <fieldset>
+            <legend>Categorias</legend>
+            <table cellspacing="10">
                 <tr>
                     <td>
-                        <label for="rua">Rua:</label>
+                        <label for="categoria">Categoria:</label>
                     </td>
                     <td align="left">
-                        <input type="text" name="rua">
-                    </td>
-                    <td>
-                        <label for="numero">Telefone:</label>
-                    </td>
-                    <td align="left">
-                        <input type="text" name="numero" size="10">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="bairro">Bairro: </label>
-                    </td>
-                    <td align="left">
-                        <input type="text" name="bairro">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="estado">Estado:</label>
-                    </td>
-                    <td align="left">
-                        <select name="estado">
-                            <option value="ac">Acre</option>
-                            <option value="al">Alagoas</option>
-                            <option value="am">Amazonas</option>
-                            <option value="ap">Amapá</option>
-                            <option value="ba">Bahia</option>
-                            <option value="ce">Ceará</option>
-                            <option value="df">Distrito Federal</option>
-                            <option value="es">Espírito Santo</option>
-                            <option value="go">Goiás</option>
-                            <option value="ma">Maranhão</option>
-                            <option value="mt">Mato Grosso</option>
-                            <option value="ms">Mato Grosso do Sul</option>
-                            <option value="mg">Minas Gerais</option>
-                            <option value="pa">Pará</option>
-                            <option value="pb">Paraíba</option>
-                            <option value="pr">Paraná</option>
-                            <option value="pe">Pernambuco</option>
-                            <option value="pi">Piauí</option>
-                            <option value="rj">Rio de Janeiro</option>
-                            <option value="rn">Rio Grande do Norte</option>
-                            <option value="ro">Rondônia</option>
-                            <option value="rs">Rio Grande do Sul</option>
-                            <option value="rr">Roraima</option>
-                            <option value="sc">Santa Catarina</option>
-                            <option value="se">Sergipe</option>
-                            <option value="sp">São Paulo</option>
-                            <option value="to">Tocantins</option>
+                        <select name="categoria">
+                            <option value="ac">Assistencial</option>
+                            <option value="am">Executiva</option>
+                            <option value="al">Financeira</option>
+                            <option value="ap">Jurídica</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="cidade">Cidade: </label>
+                        <label for="cidade">Data de Entrada</label>
                     </td>
                     <td align="left">
-                        <input type="text" name="cidade">
+                        <input type="text" name="horaentrada">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cidade">Data de Saída </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="horasaida">
                     </td>
                 </tr>
             </table>
@@ -118,8 +78,9 @@
         <br />
 
         <input type="submit" value="Salvar" />
-        <br/>
+        <br />
     </form>
 </body>
 
 </html>
+

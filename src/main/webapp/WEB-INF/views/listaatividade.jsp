@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>exem01: LISTA DE SEDES</title>
+    <title>Formulario Atividade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
@@ -16,7 +16,7 @@
     <div>
         <h1>lista de Atividades</h1>
 
-        <c:forEach var="sd" items="${listased}">
+        <c:forEach var="sd" items="${listasativ}">
             fieldset>
             <legend>Dados Pessoais</legend>
             <table cellspacing="10">

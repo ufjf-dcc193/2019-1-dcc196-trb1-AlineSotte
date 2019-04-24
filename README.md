@@ -3,16 +3,12 @@
 Ajudar a Ong administrar suas Sedes.
 
 -- Objetivo do Trabalho
-  - Criar telas para listar, cadastrar, atualizar ,exluir e totalizar a quantidade de hora para cada categoria de Atividade 
-   -- Sedes
-   -- Atividades
-   -- Membros
+  - Criar telas para listar, cadastrar, atualizar ,exluir e totalizar a quantidade de hora para cada categoria de Atividade (Sedes,Atividades, Membros).
 
--- Trabalho realizado
-  -- Listar e Cadastrar
-    -- Sedes
-    -- Atividades
-    -- Membros
+-- Trabalho realizado (Listar e Cadastrar)
+- Sedes
+- Atividades
+- Membros
 
 -- Desenvolvimento:
    
@@ -30,18 +26,18 @@ Ajudar a Ong administrar suas Sedes.
 
 -- Dificuldade 
 
- -- configurar as dependência projeto erros que impossibilitaram o desenvolvimento do projeto;
- -- o banco utilizado Derby não criava as tabelas;
- -- Quando inseria o dado não persistia;
- -- Devido ao banco não consguia testar o que ja tinha sido implementado como cadastrar e inserir Sede na lista;
- -- Não ocorreu o funcionamento completo de todas as requisições do projeto para data atual.
+ - configurar as dependência projeto erros que impossibilitaram o desenvolvimento do projeto;
+ - o banco utilizado Derby não criava as tabelas;
+ - Quando inseria o dado não persistia;
+ - Devido ao banco não consguia testar o que ja tinha sido implementado como cadastrar e inserir Sede na lista;
+ - Não ocorreu o funcionamento completo de todas as requisições do projeto para data atual.
  
  -- Aprendizado
 
- -- configurar o ambiente;
- -- entender os problemas encontrados ao trabalhar com o banco Derby;
- -- estudar JPA;
- -- estudar Lombok que foi utilizado no início do projeto para dimuir a quantidade de linhas e deixar o código mais limpo;
- -- estudar mapeamento entre as entedidades;
- -- entender o funcionamento da View e Controller, assim como a necessidade do Repositório; 
- -- Anotações e suas funções dentro do código
+ - configurar o ambiente;
+ - entender os problemas encontrados ao trabalhar com o banco Derby;
+ -  estudar JPA;
+ -  estudar Lombok que foi utilizado no início do projeto para dimuir a quantidade de linhas e deixar o código mais limpo;
+ -  estudar mapeamento entre as entedidades;
+ - entender o funcionamento da View e Controller, assim como a necessidade do Repositório; 
+ - Anotações e suas funções dentro do código

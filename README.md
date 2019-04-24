@@ -3,7 +3,7 @@
 Ajudar a Ong administrar suas Sedes.
 
 -- Objetivo do Trabalho
-  - Criar telas para listar, cadastrar, atualizar e exluir 
+  - Criar telas para listar, cadastrar, atualizar ,exluir e totalizar a quantidade de hora para cada categoria de Atividade 
    -- Sedes
    -- Atividades
    -- Membros

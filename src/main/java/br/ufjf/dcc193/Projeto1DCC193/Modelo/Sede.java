@@ -26,6 +26,22 @@ private String telefone;
 
 private String endereco;
 
+private String site;
+
+/**
+ * @return the site
+ */
+public String getSite() {
+    return site;
+}
+
+/**
+ * @param site the site to set
+ */
+public void setSite(String site) {
+    this.site = site;
+}
+
 public Sede(){}
 
 /**

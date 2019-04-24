@@ -34,8 +34,8 @@ public class SedeController {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("listasede");
         repsede.save(s);
-        List<Sede> sd = repsede.findAll();
-        mv.addObject("listased", sd);
+        List<Sede> sedes = repsede.findAll();
+        mv.addObject("sedes", sedes);
         return mv;
     }
 

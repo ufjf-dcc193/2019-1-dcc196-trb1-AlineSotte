@@ -14,18 +14,23 @@
 
 <body>
     <div>
-        <h1>lista de Sedes</h1>
+        <h1>lista de Atividades</h1>
 
-        <c:forEach var="sede" items="${sedes}">
+        <c:forEach var="sd" items="${listased}">
+            fieldset>
+            <legend>Dados Pessoais</legend>
             <table cellspacing="10">
                 <tr>
                     <td>
-                        ${sede.getNomeFantasia()}</td>
-                        <td><input type="submit" value="Excluir">
+                        <p>${sd.nomeFantasia}</p>
+                        <input type="submit" value="Excluir">
                         <input type="submit" value="Atualizar">
                     </td>
-                </tr>               
+                </tr>
+                <tr>
+                </tr>
             </table>
+            </fieldset>
         </c:forEach>
     </div>
     <div>
